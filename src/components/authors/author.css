@@ -1,0 +1,50 @@
+#stupid{
+    border : 1px solid rgb(218, 29, 83);
+    margin: 0;
+
+    background-color: rgb(218, 29, 83);
+    color: #523c05;
+}
+#author-container{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 20px 0px 20px;
+}
+.author-info{
+    width: 50%;
+}
+.links{
+    color: #DAA520;
+    text-decoration: underline;
+}
+.links:hover{
+    color: #b3850f;
+    text-shadow: #d1ae55 1px 0px 10px;
+}
+.author-img{
+    padding-right: 1rem;
+    height: 80%;
+}
+.author-img img{
+    border-radius: 7px;
+}
+.author-wrap{
+    display: flex;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 1200px){
+    .author-info{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 595px){
+    .author-wrap{
+        display: block;
+    }
+    #auth-link{
+        display: flex;
+    }
+}

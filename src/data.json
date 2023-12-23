@@ -1,0 +1,7 @@
+[
+    {"name": "Якуб Колас", "en-name" : "Yakub-Kolas", "photo" : "../../img/Yakub/ЯкубГориз.jpg", "path" : "/yakub"},
+    {"name": "Янка Купала", "en-name" : "Yanka-Kupala", "photo" : "../../img/Yanka/ЯнкаГориз.jfif", "path" : "/yanka"},
+    {"name": "Нил Гилевич", "en-name" : "Nil-Gilevich", "photo" : "../../img/Nil/NilHoriz.jpg", "path" : "/nil"},
+    {"name": "Максим Богданович", "en-name" : "Maksim-Bogdanovich", "photo" : "../../img/Maks/MaksHoriz.jpeg", "path" : "/maks"},
+    {"name": "Владимир Короткевич", "en-name" : "Vladimir-Korotkevich", "photo" : "../../img/Korotky/KorotkyHoriz.jpg", "path" : "/korotky"}
+]

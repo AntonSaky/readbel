@@ -1,0 +1,277 @@
+*{
+    color:#4c4c4c
+}
+a{
+    text-decoration: none;
+}
+.background{
+    background: url("../../img/paper.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+#main-container{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 20px 0px 20px;
+}
+.container{
+    width:80%;
+    background-color: #f3f3d9; 
+    /* f3f3d9 */
+    /* ededd3 */
+}
+#responsive-navbar-nav{
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.navbar{
+    padding: 0;
+    margin: 0 0 50px 0;
+}
+.all-nav-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3d9;
+    /* fbfbdf */
+}
+.nav-container{
+    display: flex;
+}
+.nav-link a{
+    color:#DAA520;
+}
+.nav-link a:hover{
+    color: #b3850f;
+    text-shadow: #d1ae55 1px 0px 10px;
+}
+
+.btn-ru, .btn-en{
+    margin-left: 5px;
+    padding: 0;
+    height: 2rem;
+    width: 2.5rem;
+    background: #DAA520;
+    border: 1px solid #DAA520;
+    border-radius: 5px;
+    text-align: center;
+}
+/* .btn-en:click, .btn-ru:click{
+    background: #b3850f;
+} */
+.btn-ru:hover, .btn-en:hover{
+    background: #b3850f;
+    border: 1px solid #b3850f;
+}
+.site-info{
+    padding-top: 20px;
+}
+/* -------------------Писатель дня------------- */
+.writer-of-day h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+.about-writer-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.writer-info-wrap{
+    width: 45%;
+}
+
+.more{
+    padding: 7px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fbfbdf;
+    background-color: #d3a93e;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.2s;
+    width: 215px;
+    text-align: center;
+}
+.more:hover{
+    color: #fbfbdf;
+    background-color: #c69c31;
+}
+
+.writer-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.writer-img {
+    margin-left: 8rem;
+    width: 50%;
+    height: 50%;
+}
+/* -------------------Другие писатели------------- */
+.writers-works{
+    display : flex;
+    /* margin-right : 10rem; */
+    margin-bottom: 8rem;
+}
+#seccol{
+    margin-top: 40px;
+}
+.list-group-item{
+    background-color: #f3f3d9;
+}
+.list-group-item a{
+    color: #DAA520;
+}
+.list-group-item a:hover{
+    color: #b3850f;
+    text-shadow: #d1ae55 1px 0px 10px;
+}
+.list-group-item::before{
+    content: "\2022";
+    margin-right: 10px;
+}
+
+.other-writers li{
+    list-style: disc;
+}
+
+
+.other-writers li a{
+    color: #DAA520;
+}
+
+.another-writers a:hover{
+    color: #b3850f;
+    text-shadow: #ffd66d 1px 0 10px;
+}
+/* .titles{
+    display: flex;
+    max-width:460px;
+    justify-content: space-between;
+    margin-bottom: 0;
+} */
+
+.titles h4{
+    margin-right: 5rem;
+}
+.titles h4:last-child{
+    margin-right: 0;
+}
+.writers-works{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+ .writers{
+    margin-right: 6rem;
+ }
+ .works{
+    margin-right: 25px;
+ }
+.works-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width: 1200px){
+    .writer-img {
+        margin-left: 5rem;
+        width: 400px;
+        height: 270px;
+    }
+    #a-link{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .nav{
+        flex-direction: row;
+    }
+    .nav-link{
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    .btn-ru{
+        margin-right: 3px;
+    }
+    .nav-container{
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .about-writer-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 5px;
+    }
+    .writer-img {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .writer-info-wrap{
+        width: 100%;
+    }
+    .titles{
+        margin-right: 1rem;
+
+    }
+}
+@media screen and (max-width: 770px){
+    .writers-works{
+        display: block;
+    }
+
+    #seccol .list-group-item{
+        margin-bottom: 20px;
+    }
+    #seccol{
+        margin-top: 36px;
+    }
+    .works-wrap{
+        align-items: unset;
+    }
+}
+@media screen and (max-width: 595px){
+    .nav{
+        display: block;
+    }
+    .nav-link{
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 540px){
+    .works-wrap{
+        display: block;
+    }
+    #seccol .list-group-item{
+        margin-bottom: 0px;
+    }
+    #seccol{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 332px){
+    .nav button{
+        flex-direction: row;
+    }
+}
